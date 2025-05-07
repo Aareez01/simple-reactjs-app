@@ -16,7 +16,7 @@ phases:
   post_build:
     commands:
       - echo Build complete. Copying files to S3...
-      - aws s3 sync build/ s3://prods-frontend/ --delete --acl public-read
+      - aws s3 sync build/ s3://prods-frontend/ --delete
 
 artifacts:
   files:
